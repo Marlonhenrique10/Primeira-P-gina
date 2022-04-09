@@ -1,0 +1,86 @@
+#tituloPrin, #subTitulo, #postTitulo {
+    color: rgba(0, 0, 0, 0.579);
+}
+
+#subTitulo {
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+}
+
+#corpo {
+    background-color: darkgray;    
+}
+
+#tituloPrin {
+    font-size: 30px;
+    text-align: center;
+}
+
+#postTitulo {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+.primeiraImagem {
+    max-width: 400px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    display:inline-block;
+    border:2px solid black;
+    margin: 4px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto 
+}
+
+.segundaImagem {
+    max-width: 350px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    display:inline-block;
+    border:2px solid blue;
+    margin: 4px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;    
+}
+
+.primeiroParagrafo {
+    font-weight: bold;
+    text-align: center; 
+    font-family: 'Franklin Gothic Medium';
+}
+
+.segundoParagrafo {
+    font-size: medium;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.terceiroParagrafo {
+    margin: 0%;
+    margin-top: 15px;
+}
+
+.post {
+    background-color: azure;
+    padding: 15px;
+    border: 3px dotted black;
+    margin-bottom: 15px;
+}
+
+.listaNaoOrdenada {
+    list-style-type: circle;
+    padding-left: 25px;
+}
+
+.listaNaoOrdenada li a{
+    font-size: medium;
+    font-style: italic;
+    color: black;
+    font-weight: bold;    
+}
