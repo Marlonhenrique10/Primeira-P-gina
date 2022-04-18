@@ -1,76 +1,46 @@
-#tituloPrin, #subTitulo, #postTitulo {
-    color: rgba(0, 0, 0, 0.579);
-}
-
-#subTitulo {
-    font-size: 25px;
-    font-style: italic;
-    text-align: center;
-}
-
 #corpo {
-    background-color: darkgray;    
+    background-color: darkgray;
 }
 
-#tituloPrin {
-    font-size: 30px;
+.navbar {
+    background-color: rgb(99, 163, 197);       
+}
+
+.navbar-nav li a{
+    text-transform: uppercase;
+}
+
+.inicio-corpo {    
     text-align: center;
+    font-style: italic;    
 }
 
-#postTitulo {
-    font-variant: small-caps;
-    text-align: center;
+.margin {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.primeiraImagem {
-    max-width: 400px;
-    max-height: 350px;
-    width: auto;
-    height: auto;
-    display:inline-block;
-    border:2px solid black;
-    margin: 4px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto 
+.imagemLogo {
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(190, 185, 185);
+    border-radius: 100%;
 }
 
-.segundaImagem {
-    max-width: 350px;
-    max-height: 300px;
-    width: auto;
-    height: auto;
-    display:inline-block;
-    border:2px solid blue;
-    margin: 4px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;    
+.imagem-ti {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    border: 2px solid whitesmoke;
+    margin-bottom: 10px;
 }
 
-.primeiroParagrafo {
-    font-weight: bold;
-    text-align: center; 
-    font-family: 'Franklin Gothic Medium';
-}
-
-.segundoParagrafo {
-    font-size: medium;
-    text-align: center;
+.carros {
+    padding-top: 10px;
+    padding-bottom: 80px;    
+    font-size: larger;
     font-style: oblique;
-    font-weight: bolder;
-}
-
-.terceiroParagrafo {
-    margin: 0%;
-    margin-top: 15px;
-}
-
-.post {
-    background-color: azure;
-    padding: 15px;
-    border: 3px dotted black;
-    margin-bottom: 15px;
+    /* background-color: rgba(77, 77, 224, 0.694); */
 }
 
 .listaNaoOrdenada {
@@ -83,4 +53,207 @@
     font-style: italic;
     color: black;
     font-weight: bold;    
+} 
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: .6s;
+}
+
+.card:hover .card-front{
+    transform: rotateX(-180deg);
+}
+
+.card:hover .card-back{
+    transform: rotateX(0deg);
+}
+
+.card-back h3{
+    margin: 60% auto 35% auto;
+    font-size: 25px;
+}
+
+.card-back{
+    font-size: 22px;
+}
+
+.card-front{
+    border-radius: 5px;
+    width: 100%; height: 100%;
+    background-image: url(carro-2/carro-2.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    top: 0; left: 0;
+    position: absolute;
+    background-color: black;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: .6s;
+}
+
+.card-back{
+    border-radius: 5px;
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: black;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: .6z; color: aliceblue;
+    text-align: center;
+}
+
+.card-back span{
+    color: aqua;
+    font-style: italic;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: .6s;
+}
+
+.card:hover .card-frente{
+    transform: rotateX(-180deg);
+}
+
+.card:hover .card-atras{
+    transform: rotateX(0deg);
+}
+
+.card-atras h3{
+    margin: 60% auto 35% auto;
+    font-size: 25px;
+}
+
+.card-atras{
+    font-size: 22px;
+}
+
+.card-frente{
+    border-radius: 5px;
+    width: 100%; height: 100%;
+    background-image: url(fotos/carro-3.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    top: 0; left: 0;
+    position: absolute;
+    background-color: black;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: .6s;
+}
+
+.card-atras{
+    border-radius: 5px;
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: black;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: .6z; color: aliceblue;
+    text-align: center;
+}
+
+.card-atras span{
+    color: aqua;
+    font-style: italic;
+}
+
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: .6s;
+}
+
+.card:hover .carde-frente{
+    transform: rotateX(-180deg);
+}
+
+.card:hover .carde-atras{
+    transform: rotateX(0deg);
+}
+
+.carde-atras h3{
+    margin: 60% auto 35% auto;
+    font-size: 25px;
+}
+
+.carde-atras{
+    font-size: 22px;
+}
+
+.carde-frente{
+    border-radius: 5px;
+    width: 100%; height: 100%;
+    background-image: url(fotos/carro-4.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    top: 0; left: 0;
+    position: absolute;
+    background-color: black;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: .6s;
+}
+
+.carde-atras{
+    border-radius: 5px;
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: black;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: .6z; color: aliceblue;
+    text-align: center;
+}
+
+.carde-atras span{
+    color: aqua;
+    font-style: italic;
+}
+
+.carros1{
+    width: 475px;
+    height: 350px;
+    border-style: double;
+}
+
+.carros2{
+    width: 475px;
+    height: 350px;
+    border-style: dotted;
+    
+}
+
+#quemSomos{
+    background-color: rgb(61, 164, 164);
+}
+
+#servicos {
+    background-color: rgb(112, 40, 40);
+    color: white;
 }
