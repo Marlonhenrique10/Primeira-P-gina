@@ -257,3 +257,16 @@
     background-color: rgb(112, 40, 40);
     color: white;
 }
+
+.btn-fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    visibility: hidden;
+    color: black;
+    border: 1px solid white;
+}
+
+.btn-fixed.visible {
+    visibility: visible;
+}
